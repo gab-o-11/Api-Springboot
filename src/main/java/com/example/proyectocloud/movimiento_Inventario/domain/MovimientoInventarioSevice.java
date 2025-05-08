@@ -21,6 +21,7 @@ public class MovimientoInventarioSevice {
     public MovimientoInventario crearMovimiento(MovimientoInventarioDTO createMovimientoDTO) {
         MovimientoInventario movimientoInventario = new MovimientoInventario();
         movimientoInventario.setType(createMovimientoDTO.getType());
+        movimientoInventario.setQuantity(createMovimientoDTO.getQuantity());
         movimientoInventario.setDate(createMovimientoDTO.getDate());
         movimientoInventario.setProduct_id(createMovimientoDTO.getProduct_id());
         movimientoInventario.setUser_id(createMovimientoDTO.getUser_id());

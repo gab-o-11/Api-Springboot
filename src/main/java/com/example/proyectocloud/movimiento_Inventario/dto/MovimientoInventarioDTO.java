@@ -13,6 +13,7 @@ public class MovimientoInventarioDTO {
     @ManyToOne
     @JoinColumn(name = "producto_id")
     private Producto product_id;
+    private int quantity;
     private Long user_id;
 
     public Producto getProduct_id() {
@@ -26,6 +27,12 @@ public class MovimientoInventarioDTO {
     }
     public void setType(Type tipe) {
         this.type = tipe;
+    }
+    public int getQuantity() {
+        return quantity;
+    }
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
     public Timestamp getDate() {
         return date;

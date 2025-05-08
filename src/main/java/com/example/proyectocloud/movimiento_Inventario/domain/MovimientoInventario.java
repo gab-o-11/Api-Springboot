@@ -14,6 +14,7 @@ public class MovimientoInventario {
     @JoinColumn(name = "producto_id")
     private Producto product_id;
     private Type type;
+    private int quantity;
     private Timestamp date;
     private Long user_id;
 
@@ -34,6 +35,12 @@ public class MovimientoInventario {
     }
     public void setType(Type tipe) {
         this.type = tipe;
+    }
+    public int getQuantity() {
+        return quantity;
+    }
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
     public Timestamp getDate() {
         return date;
